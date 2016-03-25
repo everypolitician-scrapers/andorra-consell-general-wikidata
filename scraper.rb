@@ -17,6 +17,3 @@ names_fr = EveryPolitician::Wikidata.wikipedia_xpath(
 ) 
 
 EveryPolitician::Wikidata.scrape_wikidata(names: { ca: names_ca, fr: names_fr }, output: false)
-warn EveryPolitician::Wikidata.notify_rebuilder
-
-
