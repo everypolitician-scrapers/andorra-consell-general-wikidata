@@ -6,7 +6,7 @@ require 'pry'
 
 names_ca = EveryPolitician::Wikidata.wikipedia_xpath(
   url:   'https://ca.wikipedia.org/wiki/Consellers_generals_d%27Andorra_(VII_Legislatura)',
-  xpath: '//table[.//th[.="Nom"]]//td[1]//a[not(@class="new")]/@title'
+  xpath: '//table[.//th[starts-with(text(), "Nom")]]//td[1]//a[not(@class="new")]/@title'
 )
 
 names_fr = EveryPolitician::Wikidata.wikipedia_xpath(
